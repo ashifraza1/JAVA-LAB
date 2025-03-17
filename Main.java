@@ -1,25 +1,15 @@
-//COLLECTION MAPS IN JAVA
-import java.util.Map;
-import java.util.HashMap;
-
-class Main {
+//Collection in java:sets in java
+import java.util.Set;
+import java.util.HashSet;
+class main{
     public static void main(String[]args){
-        Map<String,Integer> country = new HashMap<>();//Creating Empty Map
-        System.out.println("COUMTRIES DETAIL");
-        System.out.println("______________");
+        Set<String>fruits=new HashSet<>();//Creating empty fruits set
 
-        country.put("INDIA",1);
-        country.put("CHINA",2);
-        country.put("NORTH KOREA",7);
+        fruits.add("Cherry");
+        fruits.add("Grapes");
+        fruits.add("Mangoes");
+        fruits.add("Cherry");
 
-        System.out.println("COUMTRIES"+country);
-
-        for(Map.Entry<String,Integer>entry : country.entrySet()){
-            System.out.println("COUNTRIES :"+entry.getKey()+entry.getValue());
-        }
-
-
-
-
+        System.out.println("FRUIT :"+fruits);
     }
 }

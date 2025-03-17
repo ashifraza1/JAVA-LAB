@@ -1,15 +1,17 @@
-//Collection in java:sets in java
-import java.util.Set;
-import java.util.HashSet;
-class main{
+//threads in java
+
+class child extends Thread {//child class
+
+    public void run() {
+        System.out.println("This is a run method");
+
+    }
+}
+public class Main {
     public static void main(String[]args){
-        Set<String>fruits=new HashSet<>();//Creating empty fruits set
+        child c = new child();
+        c.start();
+        c.run();
 
-        fruits.add("Cherry");
-        fruits.add("Grapes");
-        fruits.add("Mangoes");
-        fruits.add("Cherry");
-
-        System.out.println("FRUIT :"+fruits);
     }
 }
